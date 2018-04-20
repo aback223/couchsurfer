@@ -4,6 +4,7 @@ import App from './App';
 import { Provider } from 'react-redux';
 import { createStore, combineReducers } from 'redux';
 import userReducer from './reducers/userReducer';
+import 'font-awesome/css/font-awesome.min.css';
 
 const rootReducer = combineReducers({ userReducer }); //import and add reducers
 const store = createStore(
