@@ -71,6 +71,8 @@ body {
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
+/* Searchbar */
+
 input:focus {
   outline: none;
 }
@@ -86,6 +88,8 @@ i.fa-search {
   padding: 5px;
   color: gray;
 }
+
+/* Couch */
 
 .couch-logo {
   width: 100px;
