@@ -1,7 +1,14 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
 /* Body */
 
 .addPadding {
   padding: 100px 8px 8px 8px;
+}
+
+body {
+  font-family: 'Josefin Sans', cursive;;
 }
 
 /* Navbar */
@@ -15,11 +22,16 @@
   border-bottom: 1px solid #DADADA;
 }
 
-.navbar-right {
-  float: right;
+.navbar-links {
   padding: 14px 16px;
   text-decoration: none;
-  margin-top: 14px;
+}
+
+.navbar-right {
+  display: inline-block;
+  float: right;
+  margin-top: 35px;
+  margin-right: 10px;
 }
 
 .navbar-left{

@@ -12,8 +12,10 @@ class Navbar extends Component {
           <i className="fa fa-search fa-2x"/>
           <input type="text" name="search" className="search" placeholder="Search..." />
         </div>
-        <NavLink to="/login" className="navbar-right">Log In</NavLink>
-        <NavLink to="/signup" className="navbar-right">Sign Up</NavLink>
+        <div className="navbar-right">
+          <NavLink to="/login" className="navbar-links">Log In</NavLink>
+          <NavLink to="/signup" className="navbar-links">Sign Up</NavLink>
+        </div>
       </div>
     )
   }
