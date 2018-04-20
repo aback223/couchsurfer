@@ -9,7 +9,7 @@ class Navbar extends Component {
       <ul className="navbar" style={{padding: 0, margin: 0}}>
         <div className="navbar-left">
           <li className="couch"><NavLink to="/"><img src={couch} alt="couch-logo" className="couch-logo"/></NavLink></li>
-          <li className="logo-text">CS</li>
+          <li className="logo-text"><NavLink to="/">CS</NavLink></li>
           <li className="searchBar">
             <i className="fa fa-search"/>
             <input type="text" name="search" className="search" placeholder="Search..." />

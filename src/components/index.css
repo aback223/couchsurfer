@@ -68,6 +68,11 @@ body {
   float: left;
 }
 
+.navbar-left a {
+  text-decoration: none;
+  color: black;
+}
+
 /* Searchbar */
 
 .searchBar {
