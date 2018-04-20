@@ -11,7 +11,7 @@ class Navbar extends Component {
           <li className="couch"><NavLink to="/"><img src={couch} alt="couch-logo" className="couch-logo"/></NavLink></li>
           <li className="logo-text">CS</li>
           <li className="searchBar">
-            <i className="fa fa-search fa-2x"/>
+            <i className="fa fa-search"/>
             <input type="text" name="search" className="search" placeholder="Search..." />
           </li>
         </div>
