@@ -7,7 +7,8 @@ class Navbar extends Component {
   render() {
     return(
       <div className="navbar">
-        <NavLink to="/" className="navbar-left"><img src={couch} className="couch-logo" alt="couch-logo"/></NavLink>
+        <NavLink to="/"><img src={couch} alt="couch-logo" className="couch-logo"/></NavLink>
+        <input type="text" className="searchBar" name="search" placeholder="Search..." />
         <NavLink to="/login" className="navbar-right">Log In</NavLink>
         <NavLink to="/signup" className="navbar-right">Sign Up</NavLink>
       </div>
