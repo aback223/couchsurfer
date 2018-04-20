@@ -15,7 +15,7 @@ body {
 
 .navbar {
   overflow: hidden;
-  background-color: ;
+  background-color: #fff;
   position: fixed;
   width: 100%;
   height: 85px;
@@ -61,17 +61,17 @@ body {
   margin-top: 14px;
 }
 
+/* Searchbar */
+
 .searchBar {
   float: left;
   border: 1px solid #DADADA;
-  margin-top: 15px;
+  margin-top: 14px;
   margin-left: 20px;
   padding: 5px;
   border-radius: 4px;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
 }
-
-/* Searchbar */
 
 input:focus {
   outline: none;
@@ -81,12 +81,17 @@ input.search {
   border: none;
   height: 100%;
   padding: 2px;
-  font-size: 30px;
+  font-size: 25px;
+  font-family: 'Poppins', sans-serif;
+}
+
+input.search::placeholder {
+  color: #DADADA;
 }
 
 i.fa-search {
   padding: 5px;
-  color: gray;
+  color: #DADADA;
 }
 
 /* Couch */
