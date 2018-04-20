@@ -11,3 +11,14 @@
   padding: 100px 8px 8px 8px;
 }
 
+.navbar-right {
+  float: right;
+  padding: 14px 16px;
+}
+
+.navbar-left{
+  float: left;
+  padding: 14px 16px;
+}
+
+

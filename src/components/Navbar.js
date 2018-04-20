@@ -6,9 +6,9 @@ class Navbar extends Component {
   render() {
     return(
       <div className="navbar">
-        <NavLink to="/">Couchsurfer</NavLink>
-        <NavLink to="/signup">Sign Up</NavLink>
-        <NavLink to="/login">Log In</NavLink>
+        <NavLink to="/" className="navbar-left">Couchsurfer</NavLink>
+        <NavLink to="/login" className="navbar-right">Log In</NavLink>
+        <NavLink to="/signup" className="navbar-right">Sign Up</NavLink>
       </div>
     )
   }
