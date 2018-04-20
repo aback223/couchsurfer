@@ -3,7 +3,9 @@ import React, { Component } from 'react';
 class Login extends Component {
   render() {
     return (
-      This is the login form.
+      <div className="login">
+        This is the login form.
+      </div>
     )
   }
 }
