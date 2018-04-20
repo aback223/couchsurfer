@@ -1,5 +1,5 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 
 /* Body */
 
@@ -8,7 +8,7 @@
 }
 
 body {
-  font-family: 'Josefin Sans', cursive;;
+  font-family: 'Helvetica';
 }
 
 /* Navbar */
@@ -25,7 +25,10 @@ body {
 
 .navbar-right a {
   text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
 }
+
 .navbar-right li{
   display: inline;
   float: right;
