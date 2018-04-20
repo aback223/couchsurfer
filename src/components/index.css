@@ -1,5 +1,5 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Poppins|Fredericka+the+Great|Josefin+Slab|Ribeye');
 
 /* Body */
 
@@ -8,7 +8,8 @@
 }
 
 body {
-  font-family: 'Helvetica';
+  font-family: 'Josefin Slab', serif;
+  font-size: 20px;
 }
 
 /* Navbar */
@@ -45,30 +46,34 @@ body {
 .navbar-right li{
   display: inline;
   float: right;
-  padding: 25px;
+  padding: 20px;
 }
 
 .navbar-right {
-  padding: 10px;
+  height: 85px;
+  line-height: 43px;
   display: inline-block;
   float: right;
 }
 
-.navbar-left{
-  float: left;
-  padding: 14px 16px;
+.navbar-left {
   text-decoration: none;
-  margin-top: 14px;
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 13px;
+}
+
+.navbar-left li {
+  display: inline;
+  float: left;
 }
 
 /* Searchbar */
 
 .searchBar {
-  float: left;
   border: 1px solid #DADADA;
-  margin-top: 14px;
-  margin-left: 20px;
-  padding: 5px;
+  margin-left: 30px;
+  padding-bottom: 5px;
   border-radius: 4px;
   box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2);
 }
@@ -78,9 +83,8 @@ input:focus {
 }
 
 input.search {
+  padding-left: 10px;
   border: none;
-  height: 100%;
-  padding: 2px;
   font-size: 25px;
   font-family: 'Poppins', sans-serif;
 }
@@ -90,17 +94,21 @@ input.search::placeholder {
 }
 
 i.fa-search {
-  padding: 5px;
+  padding: 10px 5px 5px 10px;
   color: #DADADA;
 }
 
-/* Couch */
+/* Logo */
 
 .couch-logo {
-  width: 100px;
-  float: left;
-  padding: 14px 16px;
+  width: 110px;
 }
 
+.logo-text {
+  padding: 7px;
+  font-size: 30px;
+  line-height: 55px;
+  font-family: 'Ribeye', cursive;
+}
 
 

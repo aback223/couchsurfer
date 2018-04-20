@@ -7,11 +7,14 @@ class Navbar extends Component {
   render() {
     return(
       <ul className="navbar" style={{padding: 0, margin: 0}}>
-        <li><NavLink to="/"><img src={couch} alt="couch-logo" className="couch-logo"/></NavLink></li>
-        <li className="searchBar">
-          <i className="fa fa-search fa-2x"/>
-          <input type="text" name="search" className="search" placeholder="Search..." />
-        </li>
+        <div className="navbar-left">
+          <li className="couch"><NavLink to="/"><img src={couch} alt="couch-logo" className="couch-logo"/></NavLink></li>
+          <li className="logo-text">CS</li>
+          <li className="searchBar">
+            <i className="fa fa-search fa-2x"/>
+            <input type="text" name="search" className="search" placeholder="Search..." />
+          </li>
+        </div>
         <div className="navbar-right">
           <li><NavLink to="/login">Log In</NavLink></li>
           <li><NavLink to="/signup">Sign Up</NavLink></li>
