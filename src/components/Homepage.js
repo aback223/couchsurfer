@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Homepage extends Component {
   render() {
     return(
-      <div>
+      <div className="addPadding">
         This is the Homepage Component.
       </div>
     )
