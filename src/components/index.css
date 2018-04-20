@@ -29,6 +29,19 @@ body {
   font-size: 15px;
 }
 
+.navbar-right a::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width .3s;
+}
+
+.navbar-right a:hover::after {
+  width: 100%;
+}
+
 .navbar-right li{
   display: inline;
   float: right;
