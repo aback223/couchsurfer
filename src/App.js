@@ -5,6 +5,7 @@ import Homepage from './components/Homepage';
 import Login from './components/Login';
 import Navbar from './components/Navbar';
 import Signup from './components/Signup';
+import './components/index.css';
 
 class App extends Component {
   render() {
