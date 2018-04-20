@@ -5,7 +5,7 @@ class Navbar extends Component {
   render() {
     return(
       <div className="navbar">
-        <NavLink to="/">Home</NavLink>
+        <NavLink to="/">Couchsurfer</NavLink>
         <NavLink to="/signup">Sign Up</NavLink>
         <NavLink to="/login">Log In</NavLink>
       </div>
