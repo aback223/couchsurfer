@@ -20,18 +20,22 @@ body {
   width: 100%;
   height: 85px;
   border-bottom: 1px solid #DADADA;
+  list-style-type: none;
 }
 
-.navbar-links {
-  padding: 14px 16px;
+.navbar-right a {
   text-decoration: none;
+}
+.navbar-right li{
+  display: inline;
+  float: right;
+  padding: 25px;
 }
 
 .navbar-right {
+  padding: 10px;
   display: inline-block;
   float: right;
-  margin-top: 35px;
-  margin-right: 10px;
 }
 
 .navbar-left{
