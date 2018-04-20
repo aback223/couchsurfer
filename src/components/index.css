@@ -1,5 +1,5 @@
 /* Font */
-@import url('https://fonts.googleapis.com/css?family=Poppins|Fredericka+the+Great|Josefin+Slab|Ribeye');
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,400|Fredericka+the+Great|Josefin+Slab|Ribeye');
 
 /* Body */
 
@@ -84,10 +84,12 @@ input:focus {
 }
 
 input.search {
+  width: 400px;
   padding-left: 10px;
   border: none;
-  font-size: 20px;
+  font-size: 25px;
   font-family: 'Poppins', sans-serif;
+  font-weight: 100;
 }
 
 input.search::placeholder {
