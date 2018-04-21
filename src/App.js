@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Route, Switch } from 'react-router-dom';
 import Homepage from './components/Homepage';
-import Login from './components/Login';
 import Navbar from './components/Navbar';
-import Signup from './components/Signup';
 import './components/index.css';
 
 class App extends Component {
@@ -14,8 +12,6 @@ class App extends Component {
         <div className="App">
           <Switch>
             <Route exact path="/" component={Homepage}/>
-            <Route exact path="/signup" component={Signup}/>
-            <Route exact path="/login" component={Login}/>
           </Switch>
         </div>
       </Router>
