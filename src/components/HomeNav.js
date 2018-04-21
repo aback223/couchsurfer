@@ -11,8 +11,11 @@ class HomeNav extends Component {
           <li className="logo-text"><NavLink to="/">CouchSurfer</NavLink></li>
         </div>
         <div className="navbar-right">
-          <li><NavLink to="/login">Log In</NavLink></li>
-          <li><NavLink to="/signup">Sign Up</NavLink></li>
+          <li className="loginField">
+            <input type="text" name="loginEmail" className="loginEmail" placeholder="Email" />
+            <input type="password" name="loginPassword" className="loginPassword" placeholder="Password" />
+            <button>Log In</button>
+          </li>
         </div>
       </ul>
     )

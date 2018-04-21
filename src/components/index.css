@@ -153,7 +153,12 @@ h1.homeTitle {
   font-family: 'Poppins', sans-serif;
 }
 
-.nameField, .emailField, .passwordField, .locationField, .signupButton {
+.nameField, 
+.emailField, 
+.passwordField, 
+.locationField, 
+.signupButton, 
+.loginField {
   display: table-row;
 }
 
@@ -161,7 +166,9 @@ h1.homeTitle {
   width: 100%;
 }
 
-.homeSignup input, button {
+.homeSignup input, 
+.homeSignup button, 
+.loginField input {
   margin: 10px;
   padding: 10px;
 }
