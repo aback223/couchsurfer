@@ -139,6 +139,8 @@ i.fa-search {
 
 .homeSignup {
   flex: 1;
+  display: table;
+  padding-top: 20px;
 }
 
 .homeContent img {
@@ -151,5 +153,16 @@ h1.homeTitle {
   font-family: 'Poppins', sans-serif;
 }
 
+.nameField, .emailField, .passwordField, .locationField, .signupButton {
+  display: table-row;
+}
 
+.emailField input, .passwordField input, .locationField input, .signupButton button {
+  width: 100%;
+}
+
+.homeSignup input, button {
+  margin: 10px;
+  padding: 10px;
+}
 
