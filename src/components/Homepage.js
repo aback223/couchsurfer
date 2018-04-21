@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
-import couchworld from '../couchworld.jpg'
+import couchworld from '../couchworld.png';
+import HomeNav from './HomeNav';
 
 class Homepage extends Component {
   render() {
     return(
-      <div className="addPadding homeContent">
-         <img src={couchworld} />
-         <h1 className="homeTitle">CouchSurfer</h1>
+      <div className="homeDiv"> 
+        <HomeNav />
+        <div className="addPadding homeContent">
+           <img src={couchworld} />
+        </div>
       </div>
     )
   }
