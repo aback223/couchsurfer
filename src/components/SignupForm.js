@@ -1,14 +1,19 @@
 import React, {Component} from 'react';
-import {FormGroup, FormControl} from 'react-bootstrap';
+import { Grid, FormGroup, FormControl } from 'react-bootstrap';
 
 class SignupForm extends Component {
   render() {
     return(
-      <form>
-        <FormGroup>
-          <FormControl type="text" />
-        </FormGroup>
-      </form>
+      <Grid>
+        <form>
+          <FormGroup>
+            <FormControl type="text" placeholder="First Name" />
+          </FormGroup>
+          <FormGroup>
+            <FormControl type="text" placeholder="Last Name" />
+          </FormGroup>
+        </form>
+      </Grid>
     )
   }
 }
