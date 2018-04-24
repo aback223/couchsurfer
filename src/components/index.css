@@ -153,10 +153,3 @@ h1.homeTitle {
   font-family: 'Poppins', sans-serif;
 }
 
-.homeSignup input, 
-.homeSignup button, 
-.loginField input {
-  margin: 10px;
-  padding: 10px;
-}
-
