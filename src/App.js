@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Route, Switch } from 'react-router-dom';
 import Homepage from './components/Homepage';
-import Navbar from './components/Navbar';
 import './components/index.css';
 
 class App extends Component {
