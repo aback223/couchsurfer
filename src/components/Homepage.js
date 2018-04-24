@@ -9,7 +9,7 @@ class Homepage extends Component {
         <HomeNav />
         <div className="addPadding homeContent">
           <div className="homeImage">
-            <img src={couchworld} />
+            <img src={couchworld} alt="couchworld"/>
           </div>
           <div className="homeSignup">
             <form>
