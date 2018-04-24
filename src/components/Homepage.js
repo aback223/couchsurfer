@@ -7,17 +7,25 @@ import { Row, Col, Grid } from 'react-bootstrap';
 class Homepage extends Component {
   render() {
     return(
-      <div className="homeDiv"> 
-        <HomeNav />
-        <div className="addPadding homeContent">
-          <div className="homeImage">
-            <img src={couchworld} alt="couchworld"/>
+      <Grid>
+        <Row>
+          <HomeNav />
+        </Row>
+        <Row className="homeContent">
+          <div className="addPadding">
+            <Col sm={6}>
+              <div className="homeImage">
+                <img src={couchworld} alt="couchworld"/>
+              </div>
+            </Col>
+            <Col sm={6}>
+              <div className="homeSignup">
+                <SignupForm />
+              </div>
+            </Col>
           </div>
-          <div className="homeSignup">
-            <SignupForm />
-          </div>
-        </div>
-      </div>
+        </Row>
+      </Grid>
     )
   }
 }
