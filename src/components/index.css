@@ -153,19 +153,6 @@ h1.homeTitle {
   font-family: 'Poppins', sans-serif;
 }
 
-.nameField, 
-.emailField, 
-.passwordField, 
-.locationField, 
-.signupButton, 
-.loginField {
-  display: table-row;
-}
-
-.emailField input, .passwordField input, .locationField input, .signupButton button {
-  width: 100%;
-}
-
 .homeSignup input, 
 .homeSignup button, 
 .loginField input {
