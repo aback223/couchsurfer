@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import couchworld from '../couchworld.png';
 import HomeNav from './HomeNav';
+import SignupForm from './SignupForm';
 
 class Homepage extends Component {
   render() {
@@ -12,24 +13,7 @@ class Homepage extends Component {
             <img src={couchworld} alt="couchworld"/>
           </div>
           <div className="homeSignup">
-            <form>
-              <div className="nameField">
-                <input type="text" name="firstName" placeholder="First Name" />
-                <input type="text" name="lastName" placeholder="Last Name" />
-              </div>
-              <div className="emailField">
-                <input type="text" name="email" placeholder="Email" />
-              </div>
-              <div className="passwordField">
-                <input type="password" name="password" placeholder="Password" />
-              </div>
-              <div className="locationField">
-                <input type="text" name="location" placeholder="City, State" />
-              </div>
-              <div className="signupButton">
-                <button>Sign Up</button>
-              </div>
-            </form>
+            <SignupForm />
           </div>
         </div>
       </div>
