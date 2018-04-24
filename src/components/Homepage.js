@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import couchworld from '../couchworld.png';
 import HomeNav from './HomeNav';
 import SignupForm from './SignupForm';
+import { Row, Col, Grid } from 'react-bootstrap';
 
 class Homepage extends Component {
   render() {
