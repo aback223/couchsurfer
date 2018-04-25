@@ -186,6 +186,10 @@ i.fa-search {
   text-align: center;
 }
 
+input, button {
+  font-family: 'Poppins', serif;
+  font-weight: 100;
+}
 
 h1.homeTitle {
   font-size: 60px;
