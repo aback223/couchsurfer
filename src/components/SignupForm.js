@@ -2,31 +2,43 @@ import React, {Component} from 'react';
 import { Form, Row, Button, FormGroup, FormControl } from 'react-bootstrap';
 
 class SignupForm extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      firstName: '', 
+      lastName: '', 
+      email: '', 
+      password: '', 
+
+    }
+  }
+
   render() {
     return(
       <Form inline className="signupForm">
         <div className="nameFields">
           <Row>
-            <FormGroup>
-              <FormControl type="text" placeholder="First Name" />
-              <FormControl type="text" placeholder="Last Name" />
+            <FormGroup validationState={this.getValidationState()}>
+              <FormControl type="text" name="firstName" placeholder="First Name" />
+              <FormControl type="text" name="lastName" placeholder="Last Name" />
             </FormGroup>
           </Row>
         </div>
         <div className="singleRows">
           <Row>
             <FormGroup>
-              <FormControl type="text" placeholder="Email" />
+              <FormControl type="text" name="email" placeholder="Email" />
             </FormGroup>
           </Row>
           <Row>
             <FormGroup>
-              <FormControl type="password" placeholder="Password" />
+              <FormControl type="password" name="password" placeholder="Password" />
             </FormGroup>
           </Row>
           <Row>
             <FormGroup>
-              <FormControl type="text" placeholder="City, State" />
+              <FormControl type="text" name="location" placeholder="City, State" />
             </FormGroup>
           </Row>
         </div>
