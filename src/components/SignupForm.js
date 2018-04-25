@@ -93,7 +93,7 @@ class SignupForm extends Component {
             </Row>
           </div>
           <div className="signupButton"> 
-            <input type="submit" value="Sign Up"/>
+            <input type="submit" value="SIGN UP"/>
           </div>
         </Form>
         <div className="errorMessage">{this.state.errorMessage}</div>
