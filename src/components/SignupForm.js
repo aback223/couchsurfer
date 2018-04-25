@@ -10,7 +10,8 @@ class SignupForm extends Component {
       lastName: '', 
       email: '', 
       password: '', 
-      location: ''
+      location: '',
+      errorMessage: '', 
     }
   }
 
@@ -21,13 +22,20 @@ class SignupForm extends Component {
   }
 
   createNewAccount = (event) => {
+    const {firstName, lastName, email, password, location, errorMessage } = this.state;
     event.preventDefault();
+    if (firstName === '' || lastName === '' || email === '' || password === '' || location === '') {
+      this.setState({errorMessage: "All fields must be filled."});
+    } else if (!email.includes("@") || !email.includes(".com")) {
+      this.setState({errorMessage: "Please provide a valid email address."})
+    } else {
+      this.setState({errorMessage:''})
+    }
   }
 
   render() {
     return(
       <div>
-        <div className="errorMessage">{{this.state.errorMessage}}</div>
         <Form inline className="signupForm" onSubmit={this.createNewAccount}>
           <div className="nameFields">
             <Row>
@@ -44,7 +52,7 @@ class SignupForm extends Component {
                   name="lastName" 
                   placeholder="Last Name"
                   value={this.state.lastName}
-                  onChange={this.handleChange} 
+                  onChange={this.handleChange}  
                   />
               </FormGroup>
             </Row>
@@ -57,7 +65,7 @@ class SignupForm extends Component {
                   name="email" 
                   placeholder="Email"
                   value={this.state.email}
-                  onChange={this.handleChange} 
+                  onChange={this.handleChange}  
                   />
               </FormGroup>
             </Row>
@@ -68,7 +76,7 @@ class SignupForm extends Component {
                   name="password" 
                   placeholder="Password"
                   value={this.state.password}
-                  onChange={this.handleChange} 
+                  onChange={this.handleChange}  
                   />
               </FormGroup>
             </Row>
@@ -79,15 +87,16 @@ class SignupForm extends Component {
                   name="location" 
                   placeholder="City, State"
                   value={this.state.location}
-                  onChange={this.handleChange}  
+                  onChange={this.handleChange}   
                   />
               </FormGroup>
             </Row>
           </div>
           <div className="signupButton"> 
-            <Button type="button" bsSize="large" bsStyle="primary">Sign Up</Button>
+            <input type="submit" value="Sign Up"/>
           </div>
         </Form>
+        <div className="errorMessage">{this.state.errorMessage}</div>
       </div>
     )
   }

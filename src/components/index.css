@@ -196,3 +196,14 @@ h1.homeTitle {
   font-family: 'Poppins', sans-serif;
 }
 
+.errorMessage {
+  color: blue;
+  text-align: center;
+  padding: 15px;
+  font-family: 'Poppins', serif;
+  font-size: 15px;
+}
+
+.successful {
+  border: 1px solid green;
+}
