@@ -5,14 +5,14 @@ class SignupForm extends Component {
   render() {
     return(
       <Form inline className="signupForm">
-        <Row>
-          <FormGroup>
-            <FormControl type="text" placeholder="First Name" />
-          </FormGroup>
-          <FormGroup>
-            <FormControl type="text" placeholder="Last Name" />
-          </FormGroup>
-        </Row>
+        <div className="nameFields">
+          <Row>
+            <FormGroup>
+              <FormControl type="text" placeholder="First Name" />
+              <FormControl type="text" placeholder="Last Name" />
+            </FormGroup>
+          </Row>
+        </div>
         <div className="singleRows">
           <Row>
             <FormGroup>
@@ -30,7 +30,9 @@ class SignupForm extends Component {
             </FormGroup>
           </Row>
         </div>
-        <button type="button" className="signupButton">Sign Up</button>
+        <div className="signupButton"> 
+          <Button type="button" bsSize="large" bsStyle="primary">Sign Up</Button>
+        </div>
       </Form>
     )
   }

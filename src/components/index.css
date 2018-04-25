@@ -138,12 +138,34 @@ i.fa-search {
   flex-basis: 400px;
 }
 
-.signupForm input.form-control {
-  padding: 20px;
-  margin: 10px;
+.form-group .input-control {
+  flex: 1 1 auto;
+  display: block;
 }
 
-.singleRows .form-group {
+.form-group {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 1000px) {
+   .form-group {
+     flex-direction: column;
+   }
+   .form-group .input-control {
+     margin-top: 2px;
+   }
+
+   .nameFields .form-group {
+    display: flex!important;
+   }
+
+   .nameFields .form-group input {
+    flex-grow: 1;
+   }
+ }
+
+ .singleRows .form-group {
   display: flex!important;
 }
 
@@ -151,9 +173,15 @@ i.fa-search {
   flex-grow: 1;
 }
 
-.signupButton {
-  display: block;
+.signupForm input.form-control {
+  padding: 20px;
+  margin: 10px;
 }
+
+.signupButton {
+  text-align: center;
+}
+
 
 h1.homeTitle {
   font-size: 60px;
